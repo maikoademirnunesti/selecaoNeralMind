@@ -1,0 +1,11 @@
+# Adicionar a pasta ao .gitignore
+echo "selecao-NeuralMind-env/" >> .gitignore
+
+# Remover a pasta do staging
+git rm -r --cached selecao-NeuralMind-env
+
+# Fazer o commit das alterações
+git commit -m "Remover a pasta selecao-NeuralMind-env do repositório"
+
+# Enviar as alterações para o repositório remoto
+git push origin main
